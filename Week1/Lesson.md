@@ -1,0 +1,127 @@
+- Robotics-Teach
+	- features:: robt
+	- Subject : Introduction to Robotics
+	- Links : https://www.arduino.cc/en/software/
+- ---
+- HOOK (5 min)
+	- "Think about your body. Your brain tells your hands to move, your eyes to look, your heart to beat. Robots work the same way. A robot can't do anything unless it has a brain."
+	- Hold up the Arduino UNO.
+	- "This is our robot's brain. Today, we're waking it up and making sure it's alive."
+- **Quick questions:**
+	- What does your brain do?
+	- What do you think a robot brain does?
+	- **Key point:** Robots don't think by themselves. We teach them what to do.
+- ---
+- ## PART 1: MEET THE BRAIN (15 min)
+	- ### What is Arduino?
+		- Arduino = robot brain
+		- Small but powerful
+		- Listens to instructions we send from the computer
+	- **Why it matters:**
+		- **Open-source**: People worldwide help make it better
+		- **User-friendly**: Made so beginners can learn easily
+		- **Hardware + Software**: Board you can touch + instructions we write
+		- **Interactive**: Can control lights, motors, read sensors
+	- **Robot language to use:**
+		- Arduino = Robot brain
+		- Wires = Robot nerves
+		- LEDs = Robot's way of telling us
+		- Motors = Robot muscles
+		- Sensors = Robot senses
+- ---
+- ## PART 2: INPUTS & OUTPUTS (10 min)
+- ### Explain with body example:
+	- **INPUTS** = things the robot feels or sees
+		- Buttons, light sensors, distance sensors
+	- **OUTPUTS** = things the robot does
+		- Lights, sounds, motors
+- Write on board:
+	- ```
+	  Sense (Input) → Think (Brain/Arduino) → Act (Outputs)
+	  ```
+	- "The robot brain **listens**, **decides**, and **acts**."
+- ---
+- ## PART 3: UNBOXING & IDENTIFICATION (15 min)
+- **Hands-on inventory:** Have kids carefully open kits and identify:
+	- Arduino UNO → Robot brain
+	- USB Cable → Robot power & voice
+	- LEDs → Robot lights
+	- Wires → Robot nerves
+	- Other components as applicable
+- **Math integration:**
+	- "Count your LEDs & PINS"
+	- "Count your wires"
+	- "What colors do you see?"
+	- No pressure - just observation and familiarity.
+- ---
+- ## PART 4: HOW THE ROBOT THINKS (10 min)
+- ### Explain using daily routine analogy:
+	- "Every robot follows a routine, just like you do every day."
+- **Three parts to every robot program:**
+	- **INITIALIZATION** (Getting Ready)
+		- Choosing which parts to use
+		- Giving names to things
+	- **setup()** – Wake-Up Time
+		- Runs ONCE when robot wakes up
+		- Like brushing teeth in the morning
+		- Tells robot what parts it will use
+	- **loop()** – Robot Life
+		- Runs AGAIN and AGAIN forever
+		- Like your heartbeat
+		- Keeps robot alive until power is off
+	- **Remember:** `setup()` runs once, `loop()` runs forever.
+- ---
+- ## PART 5: FIRST PROGRAM - ROBOT HEARTBEAT (25 min)
+- ### Setup environment:
+	- Connect Arduino to computer via USB
+	- Open Arduino IDE
+	- Select board: Tools > Board > Arduino UNO
+	- Select port: Tools > Port
+- ### The goal:
+	- Make the Arduino's onboard light blink like a heartbeat.
+- **Explain the plan before coding:**
+	- Arduino already has a tiny light on it (pin 13)
+	- We'll tell the robot brain to:
+		- Turn light ON
+		- Wait
+		- Turn light OFF
+		- Wait
+		- Repeat forever
+- ### Key commands (verbal explanation):
+	- `pinMode()` → "Choose what the pin does"
+	- `digitalWrite()` → "Turn something ON or OFF"
+	- `delay()` → "Wait a little bit"
+- ### Code together:
+	- Open the file: **`01_robot_heartbeat.ino`**
+	- Walk through each line explaining what it does in simple terms. Don't dive into syntax - focus on the logic.
+- ### Upload and celebrate! 🎉
+	- When the LED blinks: "Your robot brain is alive! The heartbeat means it's listening to you."
+- ---
+- ## PART 6: EXPERIMENT & PLAY (10 min)
+	- **Modifications to try:**
+	- Have kids change the delay numbers in the code:
+		- Make heartbeat faster
+		- Make heartbeat slower
+		- Make it blink in patterns (long-short-long-short)
+- **Math reinforcement:**
+	- Bigger number = slower heartbeat
+	- Smaller number = faster heartbeat
+	- 1000 = 1 second
+- Optional challenge: **`02_morse_code_SOS.ino`** (if time permits)
+- ---
+- ## WRAP-UP (5 min)
+	- **Quick reflection:**
+		- What is the robot brain?
+		- What does `setup()` do?
+		- What does `loop()` do?
+		- What can outputs do? What about inputs?
+- **Preview next class:**
+	- "Today you woke up a robot brain. Next time, we'll add an external LED and teach it to respond to US with a button - its first sense!"
+	- **Optional homework:**
+		- Try making LED spell SOS in morse code (3 short, 3 long, 3 short)
+		- Draw what you think the finished robot will look like
+- ---
+- ## TEACHING NOTES
+	- confidence over technical depth
+	- Avoid jargon like "microcontroller"
+	- This class is about feeling curious and excited, not mastering syntax
